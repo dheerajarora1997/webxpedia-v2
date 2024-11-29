@@ -1,0 +1,16 @@
+{
+  "name": "webxpedia_technologies",
+  "version": "2.0.0",
+  "description": "WebXpedia is a leading web development agency specializing in custom websites, SEO, and digital marketing services. We help businesses grow online with tailored solutions that enhance user experience, boost search engine rankings, and drive results. Partner with WebXpedia to bring your online presence to life.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --style=compressed scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-scss": "^5.3.3",
+    "sass": "^1.81.0"
+  }
+}

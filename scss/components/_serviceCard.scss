@@ -1,0 +1,11 @@
+.service-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transform-style: flat;
+  overflow: hidden;
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,35 @@
+.card-block {
+  list-style-position: inside;
+  position: relative;
+  counter-reset: custom-counter 1;
+  a {
+    background: $light;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      max-width: 90px;
+    }
+    counter-increment: custom-counter;
+    position: relative;
+    padding-left: 30px;
+  }
+  > div {
+    position: relative;
+
+    &:before {
+      content: "0" counter(custom-counter) ".";
+      position: absolute;
+      left: 20px;
+      top: 6px;
+      z-index: 9;
+      font-weight: bold;
+      font-size: 0.6em;
+    }
+  }
+  &-icon {
+    position: absolute;
+    bottom: 7px;
+  }
+}

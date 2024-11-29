@@ -1,0 +1,8 @@
+.check-list {
+  li {
+    position: relative;
+    &::marker {
+      content: "✔  ";
+    }
+  }
+}

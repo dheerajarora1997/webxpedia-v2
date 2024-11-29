@@ -1,0 +1,43 @@
+.btn_action {
+  position: relative;
+  padding: 10px 30px 10px 20px !important;
+}
+.btn_action:before,
+.btn_action:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: solid;
+  top: 48%;
+  border-width: 0 0 2px 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn_action:before {
+  width: 2px;
+  height: 2px;
+  right: 20px;
+  opacity: 0;
+}
+.btn_action:after {
+  width: 8px;
+  height: 8px;
+  right: 18px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  margin-top: -3px;
+}
+.btn_action:focus,
+.btn_action:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+}
+.btn_action:focus:before,
+.btn_action:hover:before {
+  width: 10px;
+  right: 12px;
+  opacity: 1;
+}
+.btn_action:focus:after,
+.btn_action:hover:after {
+  right: 12px;
+}
