@@ -3,6 +3,7 @@
     position: relative;
     &::marker {
       content: "✔  ";
+      color: $primary;
     }
   }
 }
