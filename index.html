@@ -8,7 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <section class="hero_section d-flex align-items-center py-3">
+    <a href="#main" class="skip-to-content">Skip to Content</a>
+    <a
+      href="https://wa.me/917303090692?text=Hi%2C%20I%20need%20some%20help%20with%20you.%20Could%20you%20assist%20me%3F"
+      class="whatsappIcon"
+      target="_blank"
+      ><img src="./WhatsApp_icon.png" alt=""
+    /></a>
+    <section class="hero_section d-flex align-items-center py-3" id="main">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-8 order-2 order-md-1">
@@ -16,6 +23,7 @@
               Would you like to take your
               <span
                 class="text-bg-primary text-white display-5 px-2 rounded fw-bold my-2 d-md-inline-block"
+                style="white-space: nowrap"
                 >Business to the next level?</span
               >
             </h1>
@@ -44,7 +52,7 @@
             Prepairing for Your Business Success with IT Solutions
           </h6>
           <div class="row card-block">
-            <div class="col">
+            <div class="col-12 col-sm-12 col-md-4 mb-2 mb-md-0">
               <a
                 href="http://"
                 target="_blank"
@@ -53,11 +61,16 @@
               >
                 <h6 class="w-40">Website Designing and Development</h6>
                 <figure class="m-0">
-                  <img src="./webxpedia-dark.png" alt="" />
+                  <img
+                    class="w-12"
+                    src="./coding.png"
+                    alt="Website Designing
+                  and Development"
+                  />
                 </figure>
               </a>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-12 col-md-4 mb-2 mb-md-0">
               <a
                 href="http://"
                 target="_blank"
@@ -66,11 +79,15 @@
               >
                 <h6 class="w-40">Social Media Marketing</h6>
                 <figure class="m-0">
-                  <img src="./webxpedia-dark.png" alt="" />
+                  <img
+                    src="./social-media.png"
+                    alt="Social Media Marketing"
+                    class="w-12"
+                  />
                 </figure>
               </a>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-12 col-md-4 mb-2 mb-md-0">
               <a
                 href="http://"
                 target="_blank"
@@ -79,10 +96,16 @@
               >
                 <h6 class="w-40">
                   Graphics Designing
-                  <pre class="d-block m-0">Presentation, Logo, </pre>
+                  <pre class="d-block m-0 text-primary">
+Presentation, Logo, </pre
+                  >
                 </h6>
                 <figure class="m-0">
-                  <img src="./webxpedia-dark.png" alt="" />
+                  <img
+                    src="./graphic-designer.png"
+                    alt="Graphics Designing"
+                    class="w-12"
+                  />
                 </figure>
               </a>
             </div>
@@ -90,11 +113,15 @@
         </div>
       </div>
     </section>
-    <section class="py-5 testimonial">
-      <div class="container py-5">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <section class="py-5 testimonial h-76 bg-light">
+      <div class="container">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-item active" data-bs-interval="3000">
               <div class="row justify-content-center align-items-center">
                 <div class="col-10 col-sm-9 col-md-8">
                   <h5>
@@ -117,7 +144,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="3000">
               <div class="row justify-content-center align-items-center">
                 <div class="col-10 col-sm-9 col-md-8">
                   <h5>
@@ -164,7 +191,15 @@
     <section class="py-5 bg-white">
       <div class="container py-4">
         <div class="row">
-          <div class="col-sm-12 col-md-5"></div>
+          <div class="col-sm-12 col-md-5">
+            <figure class="w-100 animation scale">
+              <img
+                src="./about-webxpedia.png"
+                alt="About Company"
+                class="w-100"
+              />
+            </figure>
+          </div>
           <div class="col-sm-12 col-md-7">
             <div
               class="badge bg-primary bg-opacity-25 text-primary shadow-sm mb-3 p-2 pe-3"
@@ -294,7 +329,7 @@
         <a href="" class="btn btn-primary text-light btn_action">Contact Us</a>
       </div>
     </section>
-    
+
     <section class="border-top py-5 bg-white">
       <div class="container py-4">
         <div class="row justify-content-center">
@@ -444,5 +479,11 @@
         </div>
       </div>
     </section>
+    <script>
+      const currentYear = new Date().getFullYear();
+      document.querySelector(
+        ".footer p"
+      ).innerHTML = `&copy; ${currentYear} WebXpedia. All Rights Reserved.`;
+    </script>
   </body>
 </html>

@@ -1,0 +1,16 @@
+.animation {
+  transition: all 0.3s ease-in-out;
+}
+.scale {
+  animation: scale 2s infinite ease-in-out;
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
