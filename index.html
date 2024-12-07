@@ -15,6 +15,37 @@
       target="_blank"
       ><img src="./WhatsApp_icon.png" alt=""
     /></a>
+    <header
+      class="navbar navbar-expand-lg bd-navbar sticky-top border-bottom border-dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="./webxpedia-dark.png" alt="WebXpedia" class="w-44" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#main">Home</a>
+            <a class="nav-link" aria-current="page" href="#about-us"
+              >About us</a
+            >
+            <a class="nav-link" aria-current="page" href="#main">Home</a>
+            <a class="nav-link" aria-current="page" href="#main">Home</a>
+            <a class="nav-link" aria-current="page" href="#main">Home</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <section class="hero_section d-flex align-items-center py-3" id="main">
       <div class="container">
         <div class="row">
@@ -22,8 +53,7 @@
             <h1 class="hero_heading display-6 mt-5 text-light">
               Would you like to take your
               <span
-                class="text-bg-primary text-white display-5 px-2 rounded fw-bold my-2 d-md-inline-block"
-                style="white-space: nowrap"
+                class="text-bg-primary text-white display-5 px-2 rounded fw-bold my-2 d-md-inline-block nowrap"
                 >Business to the next level?</span
               >
             </h1>
@@ -97,7 +127,7 @@
                 <h6 class="w-40">
                   Graphics Designing
                   <pre class="d-block m-0 text-primary">
-Presentation, Logo, </pre
+Presentation, Logo </pre
                   >
                 </h6>
                 <figure class="m-0">
@@ -148,6 +178,29 @@ Presentation, Logo, </pre
               <div class="row justify-content-center align-items-center">
                 <div class="col-10 col-sm-9 col-md-8">
                   <h5>
+                    Highly recommended for anyone looking for professional and
+                    creative web solutions!
+                  </h5>
+                  <p>
+                    We are thrilled with the website WebXpedia designed and
+                    developed for US. Their team understood our vision and
+                    delivered a modern, user-friendly site that perfectly
+                    reflects our brand. The entire process was smooth, and the
+                    final product exceeded our expectations. Highly recommended
+                    for anyone looking for professional and creative web
+                    solutions!
+                  </p>
+                  <div class="text-end">
+                    <h4 class="fs-6 mb-0">Vivek</h4>
+                    <span class="text-primary"> manzilmitr.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-10 col-sm-9 col-md-8">
+                  <h5>
                     I must say that they have the best team of professionals who
                     work hard to deliver the projects.
                   </h5>
@@ -189,7 +242,7 @@ Presentation, Logo, </pre
     </section>
 
     <section class="py-5 bg-white">
-      <div class="container py-4">
+      <div class="container py-2">
         <div class="row">
           <div class="col-sm-12 col-md-5">
             <figure class="w-100 animation scale">
@@ -480,10 +533,20 @@ Presentation, Logo, </pre
       </div>
     </section>
     <script>
-      const currentYear = new Date().getFullYear();
-      document.querySelector(
-        ".footer p"
-      ).innerHTML = `&copy; ${currentYear} WebXpedia. All Rights Reserved.`;
+      // const currentYear = new Date().getFullYear();
+      // document.querySelector(
+      //   ".footer p"
+      // )?.innerHTML = `&copy; ${currentYear} WebXpedia. All Rights Reserved.`;
+
+      const element = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 100) {
+          element.classList.add("scrolled");
+        } else {
+          element.classList.remove("scrolled");
+        }
+      });
     </script>
   </body>
 </html>

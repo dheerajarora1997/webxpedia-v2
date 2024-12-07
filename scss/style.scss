@@ -8,12 +8,16 @@
 @import "./base/normalize";
 @import "./base/typography";
 
-// Components
+// helper Components
 @import "./components/width";
 @import "./components/width";
 @import "./components/height";
 @import "./components/btnAction";
 @import "./components/animations";
+@import "./components/responsive";
+
+// Layout components
+@import "./layout/header";
 
 // Page components
 @import "./components/cardBlock";
