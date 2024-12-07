@@ -1,0 +1,128 @@
+:root {
+  --brand-color: #f16f3b;
+  --primary-color: #f16f3b;
+  --secondary-color: #db3647;
+  --tertiary-color: #333787;
+  --quaternary-color: #343657;
+  --quinary-color: #0e0f20;
+  --light-color: #f1f1f1;
+  --text-color: #fff;
+  --instagram-color: #e4405f;
+  --instagram-hover: #f7789e;
+  --linkedin-color: #0077b5;
+  --linkedin-hover: #005582;
+}
+body {
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Comic Neue", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color),
+    var(--quinary-color)
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+  backdrop-filter: blur(10px);
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body div.center {
+  width: calc(100vw - 300px);
+  max-width: 800px;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+body div.center:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  filter: blur(4px);
+  z-index: -1;
+}
+img {
+  width: 100%;
+  max-width: 220px;
+}
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color),
+    var(--quinary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-stroke: 1% var(--quinary-color);
+  text-stroke: 1% var(--quinary-color);
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  animation: bounceIn 2s infinite ease-in-out;
+}
+
+.social-btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-btn.instagram {
+  background-color: #e4405f;
+}
+
+.social-btn.instagram:hover {
+  background-color: #f7789e;
+  transform: scale(1.1);
+}
+.social-btn.linkedin {
+  background-color: #0077b5;
+}
+
+.social-btn.linkedin:hover {
+  background-color: #005582;
+  transform: scale(1.1);
+}
+@keyframes bounceIn {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
