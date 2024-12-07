@@ -100,13 +100,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto mt-2">
-            <a class="nav-link active" aria-current="page" href="#main">Home</a>
+            <a
+              class="nav-link active text-primary"
+              aria-current="page"
+              href="#main"
+              >Home</a
+            >
             <a class="nav-link" aria-current="page" href="#about-us"
               >About us</a
             >
-            <a class="nav-link" aria-current="page" href="#main">Home</a>
-            <a class="nav-link" aria-current="page" href="#main">Home</a>
-            <a class="nav-link" aria-current="page" href="#main">Home</a>
+            <a class="nav-link" aria-current="page" href="#services"
+              >Services</a
+            >
+            <a class="nav-link" aria-current="page" href="#portfolio"
+              >Portfolio</a
+            >
+            <a class="nav-link" aria-current="page" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -152,6 +161,7 @@
                   name="name"
                   placeholder="name"
                   class="form-control rounded-4 mb-4 opacity-75"
+                  required
                 />
 
                 <input
@@ -159,6 +169,7 @@
                   name="email"
                   placeholder="email"
                   class="form-control rounded-4 mb-4 opacity-75"
+                  required
                 />
 
                 <input
@@ -166,6 +177,7 @@
                   name="phone"
                   placeholder="phone"
                   class="form-control rounded-4 mb-4 opacity-75"
+                  required
                 />
 
                 <textarea
@@ -173,6 +185,7 @@
                   placeholder="message"
                   resize="none"
                   class="form-control rounded-4 mb-4 opacity-75"
+                  required
                 ></textarea>
 
                 <input
@@ -366,7 +379,7 @@ Presentation, Logo </pre
       </div>
     </section>
 
-    <section class="py-5 bg-white">
+    <section class="py-5 bg-white" id="about-us">
       <div class="container py-2">
         <div class="row">
           <div class="col-sm-12 col-md-5">
@@ -413,7 +426,7 @@ Presentation, Logo </pre
       </div>
     </section>
 
-    <section class="border-top py-5">
+    <section class="border-top py-5" id="services">
       <div class="container py-4">
         <div class="row justify-content-center">
           <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
@@ -581,7 +594,7 @@ Presentation, Logo </pre
         </div>
       </div>
     </section>
-    <section class="bg-primary py-5 fancy-radius">
+    <section class="bg-primary py-5 fancy-radius bg-opacity-75" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12">
@@ -678,11 +691,62 @@ Presentation, Logo </pre
         </div>
       </div>
     </section>
+    <footer class="bg-senary">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h3 class="text-light">WebXpedia</h3>
+            <p class="text-white">
+              Our experienced team of web professionals has the skills and
+              knowledge to ensure your website stands out from the competition
+              and meets your unique business needs. Our goal is to provide you
+              with a website that will help you grow your business and achieve
+              success.
+            </p>
+          </div>
+          <!-- <div class="col-sm-12 col-md-4"></div> -->
+          <div class="col-sm-12 col-md-4" id="contact">
+            <h5 class="text-light">Social</h5>
+            <a
+              href="https://www.facebook.com/webxpedia"
+              target="_blank"
+              class="d-inline-block px-2 py-1 me-1 bg-primary bg-opacity-25 rounded-2 text-center text-white"
+            >
+              <i class="fa-brands fs-6 fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/webxpedia"
+              target="_blank"
+              class="d-inline-block px-2 py-1 me-1 bg-primary bg-opacity-25 rounded-2 text-center text-white"
+            >
+              <i class="fa-brands fs-6 fa-linkedin"></i>
+            </a>
+            <a
+              href="https://instagram.com/webxpedia"
+              target="_blank"
+              class="d-inline-block px-2 py-1 me-1 bg-primary bg-opacity-25 rounded-2 text-center text-white"
+            >
+              <i class="fa-brands fs-6 fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@webxpedia"
+              target="_blank"
+              class="d-inline-block px-2 py-1 me-1 bg-primary bg-opacity-25 rounded-2 text-center text-white"
+            >
+              <i class="fa-brands fs-6 fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-element bg-senary border-top border-tertiary">
+        <p class="py-2 text-center text-white m-0">
+          &copy; 2025 WebXpedia. All Rights Reserved
+        </p>
+      </div>
+    </footer>
     <script>
       // const currentYear = new Date().getFullYear();
-      // document.querySelector(
-      //   ".footer p"
-      // )?.innerHTML = `&copy; ${currentYear} WebXpedia. All Rights Reserved.`;
+      // document.querySelector(".copyright-element p")?.innerHTML = `&copy; ${currentYear} WebXpedia. All Rights Reserved`;
 
       const element = document.querySelector("header");
 
