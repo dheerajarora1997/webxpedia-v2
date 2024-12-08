@@ -54,6 +54,9 @@ body div.center {
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+  @media (max-width: 768px) {
+    width: calc(100vw - 50px);
+  }
 }
 body div.center:after {
   content: "";
