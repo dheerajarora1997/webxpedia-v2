@@ -3,14 +3,14 @@
 .gradient {
   background: linear-gradient(
     45deg,
-    rgba($primary, 0.1),
-    rgba($secondary, 0.1),
-    rgba($tertiary, 0.1),
-    rgba($quinary, 0.1)
+    rgba($primary, 0.5),
+    rgba($secondary, 0.5),
+    rgba($tertiary, 0.5),
+    rgba($quinary, 0.5)
   );
   background-size: 200% 200%;
   animation: gradientBG 5s ease infinite;
-  backdrop-filter: blur(10px);
+  backdrop-filter: saturate(100%) blur(8px);
 }
 @keyframes gradientBG {
   0% {

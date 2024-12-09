@@ -14,7 +14,8 @@
   border-style: dashed;
 }
 
-.box {
+.backdrop-filter {
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 .badge-notify {
