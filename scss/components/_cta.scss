@@ -21,4 +21,7 @@
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: saturate(100%) blur(8px);
   }
+  @media only screen and (max-width: 767px) {
+    background-position: center;
+  }
 }
