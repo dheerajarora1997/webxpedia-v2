@@ -13,6 +13,8 @@ body {
   -webkit-overflow-scrolling: touch;
   font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
   @media only screen and (min-width: 1440px) {
     font-size: 16px;
   }
