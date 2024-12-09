@@ -1,0 +1,9 @@
+.pricing-card {
+  box-shadow: 0 0 30px 0 rgba($senary, 0.09);
+  transition: all 0.3s ease-in-out;
+  background: rgba($white, 0.1);
+  // backdrop-filter: saturate(100%) blur(8px);
+  &:hover {
+    transform: scale(1.01);
+  }
+}
