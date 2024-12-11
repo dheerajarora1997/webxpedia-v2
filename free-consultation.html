@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thankyou! | WebXpedia</title>
+    <title>Free Consultation! | WebXpedia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,21 +14,19 @@
   </head>
   <body>
     <div class="center">
-      <div class="">
+      <div style="">
         <img src="./webxpedia-dark.png" alt="" />
-        <h1 style="font-size: 80px; margin-block: 10px" class="gradient-text">
-          Thankyou
+        <h1 style="font-size: 50px; margin-block: 10px" class="gradient-text">
+          Welcome to Your <br />
+          Free Consultation!
         </h1>
-        <p>
-          We have received your submission and will get back to you shortly.
-          <br />
-          Your interest means a lot to us, and we’re excited to assist you!
+        <p style="font-size: 1.5rem; margin-bottom: 10px">
+          Connecting you with our team...
         </p>
-        <p>
-          Meanwhile, feel free to explore more about us or check your email for
-          further updates.
+        <p style="font-size: 1.5rem; margin-top: 5px">
+          Need help now? Call us at:
+          <a href="tel:917303090692">+91-730 30 90 692</a>
         </p>
-        <a href="/" class="btn">Back to Home</a>
         <div class="social-links" style="margin-top: 30px">
           <a
             href="https://www.instagram.com/webxpedia/"
@@ -43,9 +41,9 @@
             >LinkedIn</a
           >
         </div>
-        <div class="footer">
-          <p>© WebXpedia. All Rights Reserved.</p>
-        </div>
+      </div>
+      <div class="footer">
+        <p>© WebXpedia. All Rights Reserved.</p>
       </div>
     </div>
     <script>
@@ -54,8 +52,9 @@
         ".footer p"
       ).innerHTML = `&copy; ${currentYear} WebXpedia. All Rights Reserved.`;
       setTimeout(() => {
-        window.location.href = "/";
-      }, 5000);
+        window.location.href =
+          "https://wa.me/917303090692?text=Hi,%20I%E2%80%99m%20looking%20for%20ways%20to%20grow%20my%20business.%20Can%20you%20help%20me%20with%20that?";
+      }, 3000);
     </script>
   </body>
 </html>

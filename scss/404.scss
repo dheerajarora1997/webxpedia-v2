@@ -1,12 +1,21 @@
+$primary: #f16f3b;
+$secondary: #db3647;
+$success: #333787;
+$tertiary: #343657;
+$quaternary: #f27f52;
+$quinary: #f28f66;
+$senary: #0e0f20;
+$light: #f1f1f1;
+$white: #ffffff;
+
 :root {
-  --brand-color: #f16f3b;
-  --primary-color: #f16f3b;
-  --secondary-color: #db3647;
-  --tertiary-color: #333787;
-  --quaternary-color: #343657;
-  --quinary-color: #0e0f20;
-  --light-color: #f1f1f1;
-  --text-color: #fff;
+  --primary-color: $primary;
+  --secondary-color: $secondary;
+  --tertiary-color: $success;
+  --quaternary-color: $tertiary;
+  --quinary-color: $quaternary;
+  --light-color: $light;
+  --text-color: $white;
   --instagram-color: #e4405f;
   --instagram-hover: #f7789e;
   --linkedin-color: #0077b5;
@@ -23,10 +32,10 @@ body {
   height: 100vh;
   background: linear-gradient(
     45deg,
-    var(--primary-color),
-    var(--secondary-color),
-    var(--tertiary-color),
-    var(--quinary-color)
+    rgba($primary, 0.6),
+    rgba($secondary, 0.6),
+    rgba($tertiary, 0.6),
+    rgba($quinary, 0.6)
   );
   background-size: 400% 400%;
   animation: gradientBG 5s ease infinite;
@@ -73,19 +82,22 @@ img {
   max-width: 220px;
 }
 .gradient-text {
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color),
-    var(--tertiary-color),
-    var(--quinary-color)
-  );
+  background: linear-gradient(90deg, $primary, $secondary, $tertiary, $quinary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  -webkit-text-stroke: 1% var(--quinary-color);
-  text-stroke: 1% var(--quinary-color);
+  -webkit-text-stroke: 1% $quinary;
+  text-stroke: 1% $quinary;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  p {
+    width: 100%;
+    text-align: center;
+  }
 }
 .social-links {
   display: flex;
