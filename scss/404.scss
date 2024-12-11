@@ -64,7 +64,9 @@ body div.center {
   position: relative;
   overflow: hidden;
   @media (max-width: 768px) {
+    padding: 10px;
     width: calc(100vw - 50px);
+    height: calc(100vh - 250px);
   }
 }
 body div.center:after {
