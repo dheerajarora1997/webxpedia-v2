@@ -41,3 +41,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@each $color, $value in $theme-colors {
+  .hover-#{$color}-bg:hover {
+    background-color: $value !important;
+  }
+  .hover-#{$color}-text:hover {
+    color: $value !important;
+  }
+}
