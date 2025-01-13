@@ -1,16 +1,16 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
-# Redirect URLs ending with / to their corresponding .html pages
+# Force trailing slash for directories and URLs
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+# Handle URLs with trailing slash by mapping them to .html files
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}/ -f
 RewriteRule ^(.*)/$ $1.html [L]
 
-# Handle URLs without .html extension
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
-
 # Custom 404 Error Page
 ErrorDocument 404 /404.html
-
