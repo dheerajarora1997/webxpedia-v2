@@ -1,7 +1,7 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
-# Redirect URLs without trailing slash to add a slash
+# Force trailing slash for URLs without file extensions
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(.*)/$
