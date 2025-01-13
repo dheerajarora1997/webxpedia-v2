@@ -1,13 +1,13 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
-# Force trailing slash for directories and URLs
-RewriteCond %{REQUEST_URI} !/$
+# Redirect URLs without trailing slash to add a slash
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*)$ /$1/ [L,R=301]
 
-# Handle URLs with trailing slash by mapping them to .html files
+# Serve .html files for URLs with trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}/ -f
 RewriteRule ^(.*)/$ $1.html [L]
